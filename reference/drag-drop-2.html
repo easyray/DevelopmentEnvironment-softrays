@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.droptarget {
+    float: left; 
+    width: 100px; 
+    height: 35px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+</style>
+</head>
+<body>
+
+<div class="droptarget">
+  <p draggable="true" id="dragtarget">Drag me!</p>
+</div>
+
+<div class="droptarget"></div>
+
+<p id="demo"></p>
+<script src="jquery-1.9.0.min.js"></script>
+<script>
+
+function beginDrag(event) {
+    event.originalEvent.dataTransfer.setData("Text", event.target.id);
+    document.getElementById("demo").innerHTML = "Started to drag the p element.";
+}
+function allowDrop(event) {
+    event.originalEvent.preventDefault();
+}
+
+function boov(event) {
+    event.originalEvent.preventDefault();
+    var data = event.originalEvent.dataTransfer.getData("Text");
+    event.originalEvent.target.appendChild(document.getElementById(data));
+    document.getElementById("demo").innerHTML = "The p element was dropped";
+
+}
+
+$("#dragtarget").bind("dragstart", beginDrag);
+$(".droptarget").bind("dragover" , allowDrop);
+$(".droptarget").bind("drop"     , boov );
+</script>
+
+</body>
+</html>

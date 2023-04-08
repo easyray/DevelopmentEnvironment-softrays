@@ -1,0 +1,35 @@
+
+
+<div style="width:400px; margin-left: 100px; text-align: justify; font-family: sans-serif; font-size: 16px; padding: 15px; background-color:#f0f0f0 ">
+<h3>Shift/Reduce Parsing</h3>
+<p>
+When bison processes grammar, it creates a set of states, each of which represents a possible position in partially parsed rules. 
+</p>
+
+<p>Each time a parser reads a tokens a token that doesn’t complete a rule, it pushes the token on an internal stack and switches to a new state reflecting the token it just read. This action is called a shift.</p>
+
+<p>When it has found all the symbols that constitute the right-hand side of a rule, it pops the right-hand side symbols off the stack, pushes the left-hand side symbol onto the
+stack, and switches to a new state reflecting the new symbol on the stack. This action is called a reduction</p>
+<p>
+ Whenever bison reduces a rule, it executes user code associated with the rule. This is how
+you actually do something with the material that the parser parses.</p>
+<p>
+	<h3>VARIOUS KINDS OF AMBIGUITY</h3>
+<p>To parse a string according to a grammar means to reconstruct the production tree (or trees) that indicate how the given string can be produced from the given grammar.<br />
+There are two important points here; one is that we do require the entire production tree
+and the other is that there may be more than one such tree.
+</p>
+<p>
+A sentence from a grammar can easily have more than one production tree, i.e., there can easily be more than one way to produce the sentence. From a formal point of view this is a non-issue (a set does not count how many times it contains an element), but as soon as we are interested in the semantics, the difference becomes significant.
+</p>
+<p>
+Not surprisingly, a sentence with more than one production tree is called ambiguous, but we must immediately distinguish between essential ambiguity and spurious ambiguity.  An ambiguous sentence is spuriously ambiguous if all its production trees describe the same semantics; if some of them differ in their semantics, the ambiguity is essential. 
+</p>
+<p>
+The notion “ambiguity” can
+also be defined for grammars:<br /> a grammar is essentially ambiguous if it can produce an
+essentially ambiguous sentence, spuriously ambiguous if it can produce a spuriously
+ambiguous sentence (but not an essentially ambiguous one) and unambiguous if it cannot do either. </p>
+<p>
+Strangely enough, languages also can be ambiguous: there are (contextfree) languages for which there is no unambiguous grammar; such languages belong in a research lab, </p>
+</div>

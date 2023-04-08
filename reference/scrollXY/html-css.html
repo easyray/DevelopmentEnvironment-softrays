@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What is HTML</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			font-size: 16px;
+			background-color: antiquewhite;
+			color: #351428;
+			padding: 0px;
+			margin: 0px;
+		}
+		div#body-containter{
+			width: 90%;
+			margin-left: 5%;
+			text-align: justify;
+			background-color: #e6d7c3;
+			padding: 10px;
+		}
+		.underlined{
+			text-decoration: underline;
+		}
+		table.kool{
+			border-collapse: collapse;
+
+		}
+		table.kool th,td{
+			padding: 10px;
+		}
+		table.kool th{
+			background-color: #e44d26;
+			text-align: center;
+			color: #b6dfff;
+		}
+		table.kool tr:nth-child(even){
+			background-color: antiquewhite;
+			
+		}
+		.div-50{
+			width: 50%;
+		}
+		.middle{
+			display: flex;
+			align-content: flex-start;
+			justify-content: center;
+		}
+		.kool-title{
+			font-family: cursive;
+			font-weight: 900;
+			font-size: 56;
+		}
+		footer{
+			background-color: black;
+			color: #777;
+			padding: 10px;
+		}
+		header{
+			font-family: cursive;
+			background-color: #555;
+			padding: 20px;
+			color: #eee;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body onscroll="checkPosition()">
+<div style="position: fixed;" id="outbox"></div>
+<header>CVBS 2022 Web Design class</header>
+	<div id="body-containter">
+		<h1><img src="pictures/images.png" height="150">Web Design (using HTML)</h1>
+		<hr />
+		Web design is the art of creating web pages and websites. A web page is a document that presents information on the world wide web. Fo instance if you connect eto the internet and open you browser and put the following address "www.google.com", you will see a page from which you can perform we searches; this is an example of a web page. A wesite is a collection of web pages that are available from the same root web-address on the internet. For instance there is a website at www.hillcityschools.com, and you can view several related pages from this same address. You can create a web page by using a text editor, such as notepad, notepad++, wordpad, sublime-text, visual-studio code. You have to type in some markup code into your text editor, and save it order order to create your web page. The "code" you type is in a language called: 
+		<p>
+			<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage<strong>(HTML)</strong>.
+		</p>
+		It is the duty of the web browser read these codes and use them to present a meaningfull good looking web page. 
+		<
+		<h2 class="underlined">HTML Tags</h2>
+		<img src="pictures/html-tags-list.svg" width="200">
+		<p>
+			HTML is a markup language and  it makes use of various tags to format content. Tags are enclosed  within angle braces like this:<code>&lt;Tag-name&gt;</code>
+			<br><br>Examples:
+			<code>&lt;p&gt;,&lt;img&gt;,&lt;table&gt;&lt;ul&gt; etc.....</code>
+
+		</p>
+		<p>
+			Except few tags, most of the tags have their corresponding closing tags. For example, &lt;html&gt; has its closing tag &lt;/html&gt; and &lt;body&gt; tag has its closing tag &lt;/body&gt; etc.
+			<div class="middle">
+				<img src="pictures/word-image.png" />
+			</div>
+			<p>Here are some common HTML tags:</p>
+		</p>
+		<div class="middle" id="that-box">
+
+			<div class="div-50">
+			<div id="fixed-box" style="padding:20px;background-color: aliceblue;">This should fix</div>
+				<span class="kool-title">Some HTML tags</span>
+			<table border="1" class="kool">
+				<tr>
+					<th>SN</th>
+					<th>Tag</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>&lt;!DOCTYPE...&gt;</td>
+					<td>
+					This tag defines the document type and HTML version.
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>&lt;html&gt;</td>
+					<td>
+						This tag encloses the complete HTML document and mainly comprises of document header which is represented by &lt;head&gt;...&lt;/head&gt; and document body which is represented by &lt;body&gt;...&lt;/body&gt; tags.
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>&lt;head&gt;</td>
+					<td> 
+						This tag represents the document's header which can keep other HTML tags like &lt;title&gt;, &lt;link&gt; etc.
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>&lt;title&gt;</td>
+					<td> 
+						The &lt;title&gt; tag is used inside the &lt;head&gt; tag to mention the document title.
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>&lt;a&gt;<br>(anchor-tag)</td>
+					<td>
+						This tag is used to dreate a hyperlink. Hyperlink is a a piece of text (or perhap image or other stuff) Whcih takes user to a new page if the click on it
+					</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>&lt;p&gt;<br>(paragraph-tag)</td>
+					<td>
+						This tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening &lt;p&gt; and a closing &lt;/p&gt; 
+					</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Heading<br>(&lt;h1&gt;-&lt;h6&gt;)</td>
+					<td>
+						Heading create big and heavy letters that represent headings in a text article. has six levels of headings, which use the elements &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and &lt;h6&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>List<br>(&lt;ol&gt;,&lt;ul&gt;&amp;&lt;li&gt;)</td>
+					<td>
+						The &lt;li&gt; tag is used with the &lt;ul&gt; and &lt;ol&gt; tags to create unordered and ordered lists respectively. A group od &lt;li&gt; tags surrounded by &lt;ul&gt; produces an unordered list. surround with &lt;ol&gt; to produce ordered list
+					</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		
+		<div class="middle" style="margin-top: 100px;">
+			<img src="pictures/html-basic-tags.png" >
+		</div>
+
+	</div>
+
+<footer>A production of bigsheun ent. &copy; 2022</footer>
+<script   >
+	GCount=0;
+	function checkPosition(){
+		
+		
+		x  = window.scrollY;
+		x2 =document.getElementById("that-box").offsetTop;
+		document.getElementById('outbox').innerHTML= (x2-x);
+		if((x2-x)<=50){
+			document.getElementById("fixed-box").style.position="fixed";
+			document.getElementById("fixed-box").style.left="0px";
+			document.getElementById("fixed-box").style.top="0px";
+			document.getElementById("fixed-box").style.right="0px";
+		}
+		if((x2-x)>50){
+			document.getElementById("fixed-box").style.position="relative";	
+		}
+	}	
+</script>
+</body>
+</html>
