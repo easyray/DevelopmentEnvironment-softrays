@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<style>
+			#div1{
+				width: 45%;
+				border: thin solid gray;
+				float: left;
+			}
+			#div12{
+				width: 45%;
+				float: left;				
+			}
+			</style>
+		</head>
+<body>
+	<h3>Custom dialog</h3>
+	<div id="div1">
+		<div>Input Type</div>
+		<select id="input-type">
+			<option>Text</option>
+			<option>Radio</option>
+			<option>Textarea</option>
+			<option>Button</option>
+			<option>CheckBox</option>
+			<option>Select/Option</option>
+		</select>
+<div style="margin-top: 25px">Select List</div>
+<textarea rows="10" style="width:95%; margin:0px; padding: 0px" id="sel-list">
+</textarea>
+	</div>
+	<div id="div2">
+<table>
+<tbody>
+<tr>
+<td>Name</td>
+<td> <input type="text" id="i-name" /></td>
+</tr>
+<tr>
+<td>ID </td>
+<td><input type="text" id= "i-id"/> </td>
+</tr>
+<tr>
+<td>Class </td>
+<td><input type="text" id="i-class"/> </td>
+</tr>
+<tr>
+<td>Value </td>
+<td><input type="text" id="i-value"/> </td>
+</tr>
+<tr>
+<td><input type="button" value="Add" id="btn-add" onclick="addInput()" /> </td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+		
+	</div>
+<div style="clear:both">
+	 <textarea style="display: " id="content"></textarea>
+</div>
+<script>
+	function addInput(){
+
+		var InputType =  document.getElementById("input-type").value;
+		switch(InputType){
+			case "Text": doText();
+			break;
+			case "Select/Option": doSelect();
+			break;
+			case "Radio": doRadio();
+			break;
+			case "Textarea": doTextarea();
+			break;
+			case "Button": doButton();
+			break;
+			case "CheckBox": doCheckBox();
+			break;				
+			
+		}
+		
+		function doText(){
+			
+			var Str ="";
+			var IId, IClass, IName;
+			
+			IId    = document.getElementById("i-id").value ;
+			IClass = document.getElementById("i-class").value ;
+			IName  = document.getElementById("i-name").value ;
+
+			
+			Str = '<input id="'+IId+'" class="'+IClass+'" name="'+IName+'" type="text" />';
+
+			document.getElementById("content").value += Str;
+		}
+		
+		
+		function doSelect(){
+			var Str ="";
+			var IId, IClass, IName;
+			
+			IId    = document.getElementById("i-id").value ;
+			IClass = document.getElementById("i-class").value ;
+			IName  = document.getElementById("i-name").value ;
+			
+			Str = '<select id="'+IId+'" class="'+IClass+'" name="'+IName+'">';
+			
+			var List = document.getElementById("sel-list").value.split(",") ;
+			for(var i in List){
+				Str +='<option value="'+List[i]+'">'+List[i]+'</option>';
+			}
+
+			Str += '</select>';
+			
+			document.getElementById("content").value += Str;
+		
+		}
+
+
+function doRadio()
+{
+			var Str ="";
+			var IId, IClass, IName;
+			
+			IId    = document.getElementById("i-id").value ;
+			IClass = document.getElementById("i-class").value ;
+			IName  = document.getElementById("i-name").value ;
+			IValue = document.getElementById("i-value").value ;		
+			var List = document.getElementById("sel-list").value.split(",") ;
+			Str = '<input id="'+IId+'" class="'+IClass+'" name="'+IName+'" type="radio" value="'+IValue+'" />'+IValue;
+			
+			document.getElementById("content").value += Str;
+
+}
+function doTextarea(){
+	
+			var Str ="";
+			var IId, IClass, IName;
+			
+			IId    = document.getElementById("i-id").value ;
+			IClass = document.getElementById("i-class").value ;
+			IName  = document.getElementById("i-name").value ;
+			var List = document.getElementById("sel-list").value.split(",") ;
+			Str = '<textarea id="'+IId+'" class="'+IClass+'" name="'+IName+'" rows="'+List[0]+'" cols="'+List[1]+'"></textarea>';
+			
+			document.getElementById("content").value += Str;
+	
+}
+function doButton(){
+			var Str ="";
+			var IId, IClass, IName;
+			
+			IId    = document.getElementById("i-id").value ;
+			IClass = document.getElementById("i-class").value ;
+			IName  = document.getElementById("i-name").value ;
+			IValue = document.getElementById("i-value").value ;			
+			
+			Str = '<input id="'+IId+'" class="'+IClass+'" name="'+IName+'" type="button" value="'+IValue+'"/>';
+			
+			document.getElementById("content").value += Str;
+	
+}
+function doCheckBox(){
+			var Str ="";
+			var IId, IClass, IName;
+			
+			IId    = document.getElementById("i-id").value ;
+			IClass = document.getElementById("i-class").value ;
+			IName  = document.getElementById("i-name").value ;
+			IValue = document.getElementById("i-value").value ;			
+			
+			Str = '<input id="'+IId+'" class="'+IClass+'" name="'+IName+'" type="checkbox" />';
+			
+			document.getElementById("content").value += Str;
+
+}
+		/*
+					console.log(Str);
+		content
+	"input-type
+	i-name"
+	i-id
+	.i-class
+btn-addbtn-done	
+*/
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+#logo img{
+	width: 100%;
+}
+
+#intro-top-spacer{
+	min-height: 100px;
+}
+#intro{
+	padding: 10px;
+	text-align: justify;
+}
+
+#header{
+}
+#commands{
+	padding:15px;
+}
+
+#query-boxes{
+	padding:15px;
+}
+
+#work-area{
+	border-top: thin solid gray;
+}
+.div90{
+}
+
+#container{
+}

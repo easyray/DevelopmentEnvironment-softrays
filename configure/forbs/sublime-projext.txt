@@ -1,0 +1,25 @@
+{
+	"folders":
+		[
+		 {
+		 "follow_symlinks": true,
+		 "path": "."
+		 }
+		],
+	"settings": {
+	 	"xdebug": {
+	 	"url": "http://localhost/<%relative-folder%>"
+		}
+	}
+}
+
+/*
+Debug-shortcuts
+Shift+f8 : Open XDebug quick panel.
+f8 : Open XDebug control quick panel when debugger is connected.
+Ctrl+f8 : Toggle breakpoint.
+Ctrl+Shift+f5 : Run to next breakpoint.
+Ctrl+Shift+f6 : Step over.
+Ctrl+Shift+f7 : Step into.
+Ctrl+Shift+f8 : Step out.
+*/

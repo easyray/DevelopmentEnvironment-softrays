@@ -1,0 +1,156 @@
+ul.ffm_list {
+	list-style-type:none;
+}
+
+.fm_folder{
+	display: inline-block;
+	width:  32px;
+	height: 32px;
+	background-image: url(../pix/_Close.png);
+	background-size: 100% 100%;
+}
+
+	
+	.fm_file_css{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/css.png);
+		background-size: 100% 100%;
+	}
+	
+	
+	.fm_file{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/default.png);
+		background-size: 100% 100%;
+	}
+	
+	
+	.fm_file_gif{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/gif.png);
+		background-size: 100% 100%;
+	}
+	
+	
+	.fm_file_png{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/html.png);
+		background-size: 100% 100%;
+	}
+	
+	
+	.fm_file_jpg{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/jpeg.png);
+		background-size: 100% 100%;
+	}
+	
+	
+	.fm_file_js{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/js.png);
+		background-size: 100% 100%;
+	}
+	
+	
+	.fm_file_php{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/php.png);
+		background-size: 100% 100%;
+	}
+	
+	
+	.fm_file_png{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/png.png);
+		background-size: 100% 100%;
+	}
+	
+	
+	.fm_file_zip{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/zip.png);
+		background-size: 100% 100%;
+	}
+
+	.fm_file_c{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/c.png);
+		background-size: 100% 100%;
+	}	
+
+	.fm_file_cpp{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/cpp.jpg);
+		background-size: 100% 100%;
+	}		
+
+	.fm_file_html{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/html.png);
+		background-size: 100% 100%;
+	}
+
+	.fm_file_txt{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/116637-200.png);
+		background-size: 100% 100%;
+	}
+
+	.fm_file_rc{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/rc.png);
+		background-size: 100% 100%;
+	}
+
+	.fm_file_java{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/java.png);
+		background-size: 100% 100%;
+	}
+
+	.fm_file_xml{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/xml-512.png);
+		background-size: 100% 100%;
+	}
+
+	.fm_file_h{
+		display: inline-block;
+		width:  32px;
+		height: 32px;
+		background-image: url(../pix/header.jpg);
+		background-size: 100% 100%;
+	}

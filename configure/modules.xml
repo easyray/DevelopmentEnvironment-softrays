@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules>
+	<module>main-article</module>
+	<module>debug</module>
+	<module>title</module>
+	<module>menu</module>
+	<module>footer</module>
+	<module>css</module>
+</modules>

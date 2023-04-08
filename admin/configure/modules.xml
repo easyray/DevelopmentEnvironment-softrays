@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules>
+	<module>admin_menu</module>
+	<module>article_manager</module>
+	<module>css</module>
+	<module>footer</module>
+	<module>menu</module>
+	<module>page_crumbs</module>
+	<module>top_navbar</module>
+	<module>empty</module>
+	<module>status_module</module>
+	<module>page_crumbs</module>
+</modules>

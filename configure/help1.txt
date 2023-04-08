@@ -1,0 +1,4 @@
+open app 0:30
+navigate N* 0:03
+function shell 0:30
+copy and paste 0:30

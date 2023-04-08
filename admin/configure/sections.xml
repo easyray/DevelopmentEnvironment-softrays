@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections>
+	<section>main-content</section>
+	<section>css</section>
+	<section>debug</section>
+	<section>top_navbar</section>
+	<section>menu</section>
+	<section>crumbs</section>
+	<section>footer</section>
+	<section>status_module</section>
+</sections>

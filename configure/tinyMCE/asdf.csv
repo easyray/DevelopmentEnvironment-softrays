@@ -1,0 +1,13 @@
+create site Database and  add categories table {id, name parent level},00:10
+remove "else" and create a return array instead,00:05
+PDo connection and JDataMgr => Add to index,00:10
+Add a template to the system and load the page,00:10
+Sections: categories 	articles menus users,00:10
+URLS: crumbs main-content footer ,00:10
+move all the content to modules and load them from template,00:10
+categories module: create plugin to handle category creation,00:10
+add a model and fetch categories,00:10
+processor to construct list-box from the data (based on a given level only) and selects an item based on supplied value,00:10
+view  again and ready to put things into a table,00:10
+(we should confirm that WYSIWYG does not like forms or something),00:10
+display the table as such: {checkbox for deleting (value=id)	name and hidden form with span ids 	listbox for parent linking 	edit button },00:10
