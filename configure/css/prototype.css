@@ -1,0 +1,200 @@
+div, section {
+  float: left;
+  width: 100%;
+}
+
+/* you may need to remove this*
+div, section {
+  border: thin solid #333;
+  padding: 0.25%;
+  margin: 0.25%;
+  width: 99%;
+}
+
+/*******************************/
+@font-face {
+  font-family: article-font;
+  src: url(david.ttf) format("truetype");
+}
+@font-face {
+  font-family: body-font;
+  src: url(david.ttf) format("truetype");
+}
+@font-face {
+  font-family: heading-font;
+  src: url(cordiaui.ttf) format("truetype");
+}
+body {
+  font-family: body-font;
+  font-size: 16px;
+}
+
+article {
+  font-family: article-font;
+  font-size: 14px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+table.t-colapse {
+  border-collapse: collapse;
+}
+table.t-colapse th {
+  background-color: #555;
+  color: #fff;
+}
+table.t-colapse th, table.t-colapse td {
+  padding: 5px;
+}
+
+table.b-table {
+  border-collapse: collapse;
+  border-left: 0px;
+  border-right: 0px;
+  width: 100%;
+}
+table.b-table tr {
+  border-top: 2px solid #ddd;
+}
+table.b-table th {
+  background-color: #555;
+  color: #fff;
+  font-weight: 900;
+}
+table.b-table th, table.b-table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border: 0px;
+  font-family: body-font;
+}
+table.b-table td {
+  background-color: #fff;
+  color: #555;
+}
+
+ul.u-menu {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+ul.u-menu li {
+  border: thin solid #67675B;
+  background-color: #FAFAEE;
+  color: #67675B;
+
+}
+ul.u-menu li a {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  display: block;
+  padding: 10px; 
+}
+
+ul.u-nav {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+ul.u-nav li {
+  border: thin solid #67675B;
+  background-color: #FAFAEE;
+  color: #67675B;
+  display: inline-block;
+  float: left;
+  margin-left: 1px;
+  padding: 10px;
+}
+ul.u-nav li a {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.kool-heading {
+  font-family: heading-font !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.std-input {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.bodered-div {
+  border: thin solid gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.middle-div {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50px;
+}
+
+.div10 {
+  width: 9.9999%;
+}
+
+.div20 {
+  width: 19.9999%;
+}
+
+.div25 {
+  width: 24.9999%;
+}
+
+.div30 {
+  width: 29.9999%;
+}
+
+.div40 {
+  width: 39.9999%;
+}
+
+.div50 {
+  width: 49.9999%;
+}
+
+.div60 {
+  width: 59.9999%;
+}
+
+.div75 {
+  width: 74.9999;
+}
+
+.div80 {
+  width: 79.9999%;
+}
+
+.div90 {
+  width: 89.9999%;
+}
+
+/*# sourceMappingURL=prototype.css.map */
